@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Rakshati</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(45deg, #b65c32, #e2e8f0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .status-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .status-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .status-box h5 {
+            color: #007bff;
+        }
+
+        .modal-body {
+            font-size: 1.2rem;
+        }
+
+        .service-center-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-center-box:hover {
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-center-title {
+            color: #17a2b8;
+            font-size: 1.25rem;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+        .text-center h2 {
+            margin-top: 30px;
+            font-size: 2.5rem;
+        }
+
+        .text-center p {
+            font-size: 1.1rem;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        #id1{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rakshati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Rakshati1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-it-works.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Emergency Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="subscription-plans.html">Subscription Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners-testimonials.html">Partners & Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-support.html">Contact & Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <h2 class="text-center">Dashboard</h2>
+        <p class="text-center">Live updates and real-time vehicle status will be displayed here.</p>
+    </div>
+
+    <h2 class="text-center mt-5">Nearest Service Centers</h2>
+<div id="id1" class="row mt-4">
+    <div class="col-md-6">
+        <div class="service-center-box">
+            <h5 class="service-center-title">Best Service Center</h5>
+            <p>Placeholder Name - 2 km away</p>
+            <button class="btn btn-primary" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Placeholder+Name', '_blank')">Get Directions</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1870.3953761255593!2d85.80445811737397!3d20.350261210733283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e06d09a41d%3A0x21ebd1a1dc071ea1!2s9R24%2BGF7%20Silicon%20College%2C%20Silicon%20Marg%2C%20Chandaka%20Industrial%20Estate%2C%20Infocity%2C%20Chandrasekharpur%2C%20Bhubaneswar%2C%20Odisha%20751024!5e0!3m2!1sen!2sin!4v1738939964490!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="service-center-box">
+            <h5 class="service-center-title">Spare Parts Available</h5>
+            <p>Brake Pads, Engine Oil, Battery, etc.</p>
+            <button class="btn btn-primary" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Placeholder+Name', '_blank')">Check Availability</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1870.3953761255593!2d85.80445811737397!3d20.350261210733283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e06d09a41d%3A0x21ebd1a1dc071ea1!2s9R24%2BGF7%20Silicon%20College%2C%20Silicon%20Marg%2C%20Chandaka%20Industrial%20Estate%2C%20Infocity%2C%20Chandrasekharpur%2C%20Bhubaneswar%2C%20Odisha%20751024!5e0!3m2!1sen!2sin!4v1738939964490!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
